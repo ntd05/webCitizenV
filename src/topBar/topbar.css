@@ -17,6 +17,10 @@
     margin: 5px;
 }
 
+.top > .login {
+    margin-left: 700px;
+}
+
 #log {
     border: solid 2px #01a690;
     background-color: transparent;
@@ -47,15 +51,17 @@
     height: 50px;
     background: rgb(2,0,36);
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(130,198,174,1) 0%, rgba(2,169,172,1) 100%);
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.1em;
 }
 
 .menuList {
     margin-left: 50px;
     list-style: none;
-    color: white;
     display: flex;
-    font-size: 1.1em;
 }
 
 .menuListItem {
@@ -63,6 +69,23 @@
     cursor: pointer;
 }
 
-.top > .login {
-    margin-left: 700px;
+.search {
+    margin-left: 570px;
+    border-bottom: 1px solid white;
+    padding: 5px 0px;
+}
+
+.menu input {
+    border: none;
+    padding-left: 5px;
+    background-color: transparent;
+    color: white;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.menu i {
+    padding-right: 15px;
 }

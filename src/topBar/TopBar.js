@@ -22,7 +22,12 @@ export default function TopBar() {
                         <li className="menuListItem">Trang chủ</li>
                         <li className="menuListItem">Giới thiệu</li>
                         <li className="menuListItem">Liên hệ</li>
+                        <li className="menuListItem">Hướng dẫn</li>
                     </ul>
+                    <div className="search">
+                        <input type="text" value ="Tìm kiếm..."/>
+                        <i class="fas fa-search"></i>
+                    </div>
                 </div>
             </div>
         </div>
