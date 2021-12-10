@@ -1,0 +1,68 @@
+
+.top {
+    height: 115px;
+    display: flex;
+    align-items: center;
+}
+
+.top > div {
+    margin-left: 15px;
+}
+
+.login > button {
+    height: 30px;
+    width: 110px;
+    border-radius: 20px;
+    font-size: 1em;
+    margin: 5px;
+}
+
+#log {
+    border: solid 2px #01a690;
+    background-color: transparent;
+    color: #01a690;
+}
+
+#sign {
+    background-color: #01a690;
+    border: solid 2px #01a690;
+    color: white;
+}
+
+#nameWeb {
+    font-size: 3.2em;
+    color: #01a690;
+}
+
+#desWeb {
+    font-size: 0.8em;
+    color: #084946;
+}
+
+#logo {
+    margin-left: 100px;
+    height: 80%;
+}
+.menu {
+    height: 50px;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(130,198,174,1) 0%, rgba(2,169,172,1) 100%);
+    margin-bottom: 10px;
+}
+
+.menuList {
+    margin-left: 50px;
+    list-style: none;
+    color: white;
+    display: flex;
+    font-size: 1.1em;
+}
+
+.menuListItem {
+    margin: 10px 25px;
+    cursor: pointer;
+}
+
+.top > .login {
+    margin-left: 700px;
+}
