@@ -1,0 +1,10 @@
+.a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 30px;
+    margin-left: 20%;
+    display: block;
+}
+.a > p {
+    text-align: justify;
+    line-height: 1.5;
+}

@@ -15,13 +15,13 @@ export default function sideBar() {
                 <i class="far fa-user-circle"></i>
                 <p>Quản lý truy cập</p>
             </div>
-            <div className="Progress">
-                <i class="far fa-clock"></i>
-                <p>Kiểm tra tiến độ</p>
-            </div>
             <div className="Analysis">
                 <i class="fas fa-chart-line"></i>
                 <p>Phân tích dữ liệu</p>
+            </div>
+            <div className="LookUp">
+                <i class="fas fa-search"></i>
+                <p>Tra cứu</p>
             </div>
             <div className="List">
                 <i class="fas fa-database"></i>

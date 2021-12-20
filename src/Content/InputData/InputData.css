@@ -1,0 +1,39 @@
+.containerInData{
+    background-color: rgb(218, 247, 236);
+    width: 1237px;
+    height: 555px;
+    margin-left: 17.5%;
+}
+
+.MainInData {
+    background-color: white;
+    height: 555px;
+    margin:0px 150px;
+    text-align: center;
+}
+
+.MainInData > div {
+    margin: 0px;
+}
+
+.HeaderInData {
+    height: 50px;
+    display: flex;
+}
+
+.containerInData p {
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0px;
+    background-color: rgb(218, 247, 236);
+}
+
+.HeaderInData > button {
+    width: 50%;
+    border: none;
+    background-color: rgb(218, 247, 236);
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: lighter;
+    color: black;
+}

@@ -1,0 +1,74 @@
+[
+    {
+        "STT": "1",
+        "CMND": "01262",    
+        "name": "Stockbridge",
+        "DofB": "Berkshire",
+	    "Sex": "01262",    
+        "Address": "Stockbridge",
+        "religion": "Berkshire",
+	    "EduLevel": "01262",    
+        "Job": "Stockbridge",
+        "Select": "Berkshire"
+    },
+    {
+        "STT": "2",
+        "CMND": "02881",
+        "name": "Kingston",
+        "DofB": "Washington",
+	    "Sex": "02881",
+        "Address": "Kingston",
+        "religion": "Washington",
+	    "EduLevel": "02881",
+        "Job": "Kingston",
+        "Select": "Washington"
+    },
+    {
+        "STT": "3",
+        "CMND": "03470",
+        "name": "Winchester",
+        "DofB": "Cheshire",
+        "Sex": "03470",
+        "Address": "Winchester",
+        "religion": "Cheshire",
+        "EduLevel": "03470",
+        "Job": "Winchester",
+        "Select": "Cheshire"
+    },
+    {
+        "STT": "4",
+        "CMND": "14477",
+        "name": "Kent",
+        "DofB": "Orleans",
+	    "Sex": "14477",
+        "Address": "Kent",
+        "religion": "Orleans",
+	    "EduLevel": "14477",
+        "Job": "Kent",
+        "Select": "Orleans"
+    },
+    {
+        "STT": "5",
+        "CMND": "28652",
+        "name": "Minneapolis",
+        "DofB": "Avery",
+        "Sex": "28652",
+        "Address": "Minneapolis",
+        "religion": "Avery",
+        "EduLevel": "28652",
+        "Job": "Minneapolis",
+        "Select": "Avery"
+    },    
+    {
+        "STT": "6",
+        "CMND": "98101",
+        "name": "Seattle",
+        "DofB": "King",
+        "Sex": "98101",
+        "Address": "Seattle",
+        "religion": "King",
+        "EduLevel": "98101",
+        "Job": "Seattle",
+        "Select": "King"
+    }
+]

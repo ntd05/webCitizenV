@@ -1,0 +1,36 @@
+.help{
+    color: rgb(0, 46, 46);
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 20px;
+    flex: 2.5
+}
+.sear {
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.help input, button{
+    padding: 6px;
+    border: 1px solid rgb(25, 114, 87);
+    border-radius: 5px;
+}
+.help button{
+    background-color: rgb(64, 224, 176);
+}
+.he-qa{
+    display: flex;
+}
+.he-qa img{
+    width: 100px;
+    height: auto;
+}
+.he-qa a{
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 30px;
+    color: rgb(17, 51, 49);
+}
+a:hover {
+    color: crimson;
+}

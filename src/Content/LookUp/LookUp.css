@@ -1,0 +1,33 @@
+.containerLookUp{
+    width: 1237px;
+    margin-left: 17.5%;
+}
+
+.HeaderLookUp {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.HeaderLookUp input, button {
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #01a690;
+    font-weight: lighter;
+    margin:10px;
+    border-radius: 5px;
+    font-size: 17px;
+
+}
+
+.HeaderLookUp input {
+    width: 300px;
+    outline: none;
+}
+
+.HeaderLookUp button {
+    width: 150px;
+    background-color: #01a690;
+    color: white;
+    cursor: pointer;
+}
