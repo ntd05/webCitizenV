@@ -9,13 +9,19 @@ import Help from "./Page/Help/Help"
 import Introduce from "./Page/Introduce/Introduce"
 import NewEst from "./Page/newest/NewEst"
 import LookUp from "./Content/LookUp/LookUp";
+import Home from "./Page/Home/Home"
 import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
 
 
 function App() {
   return (
     <div className="App">
-      <TopBar/>
+        <TopBar/>
+        <Routes>
+          <Route exact path='/*' element={<Home/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/*' element={<NewEst/>}/>
+        </Routes>  
     </div>
   );
 }

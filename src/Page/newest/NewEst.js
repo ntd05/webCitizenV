@@ -11,8 +11,8 @@ export default function NewEst() {
             {/*<Introduce/>*/}
             {/*<Help/>*/}
             <Routes>
-                <Route path='help/*' element={<Help/>}/>
-                <Route path='intr' element={<Introduce/>}/>
+                <Route path='/help' element={<Help/>}/>
+                <Route path='/introduce' element={<Introduce/>}/>
             </Routes>
             <div className='ne'>
                 <div>

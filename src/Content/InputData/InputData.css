@@ -31,9 +31,11 @@
 .HeaderInData > button {
     width: 50%;
     border: none;
+    border-radius:0px;
     background-color: rgb(218, 247, 236);
     cursor: pointer;
     font-size: 19px;
     font-weight: lighter;
     color: black;
+    margin:0px;
 }

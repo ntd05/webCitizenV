@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from "../image/logo.png"
 import '../topBar/topbar.css'
 import { useState } from "react"
+import {Link} from 'react-router-dom'
 import { useDisclosure } from '@chakra-ui/react'
 
 export default function TopBar() {
@@ -22,10 +23,18 @@ export default function TopBar() {
                 </div>
                 <div className = "menu">
                     <ul className = "menuList">
-                        <li className="menuListItem">Trang chủ</li>
-                        <li className="menuListItem">Giới thiệu</li>
-                        <li className="menuListItem">Liên hệ</li>
-                        <li className="menuListItem">Hướng dẫn</li>
+                        <li className="menuListItem">
+                            <Link to="/Home" style={{color:"white"}}>Trang chủ</Link>
+                        </li>
+                        <li className="menuListItem"> 
+                            <Link to="/introduce" style={{color:"white"}}>Giới thiệu</Link>
+                        </li>
+                        <li className="menuListItem">
+                            <Link to="/contact" style={{color:"white"}}>Liên hệ</Link>
+                        </li>
+                        <li className="menuListItem">
+                        <Link to="/help" style={{color:"white"}}>Hướng dẫn</Link>
+                        </li>
                     </ul>
                     <div className="search">
                         <input id='searchForm' type="text" placeholder ="Tìm kiếm..."/>
