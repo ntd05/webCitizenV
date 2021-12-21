@@ -5,10 +5,13 @@
     color: white;
     padding-bottom: 20px;
     padding-top: 5px;
+    margin-right: 20px;
     width: 250px;
-    height: 100vh;
-    position: fixed;
+    height: 85vh;
     font-size: 18px;
+    position: sticky;
+    top: 60px;
+    flex: 1;
 }
 
 .BodyMenu > div {
@@ -22,4 +25,7 @@
 
 .BodyMenu > div > p {
     margin-left: 10px;
+}
+.sb{
+    display: flex;
 }

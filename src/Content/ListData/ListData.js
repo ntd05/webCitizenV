@@ -2,9 +2,9 @@ import '../ListData/ListData.css'
 import JsonData from './Data/Data.json'
 
 export default function ListData() {
-    const DisplayData=JsonData.map(
-        (info)=>{
-            return(
+    const DisplayData = JsonData.map(
+        (info) => {
+            return (
                 <tr>
                     <td>{info.STT}</td>
                     <td>{info.CMND}</td>
@@ -15,7 +15,11 @@ export default function ListData() {
                     <td>{info.religion}</td>
                     <td>{info.EduLevel}</td>
                     <td>{info.Job}</td>
-                    <td>{info.Select}</td>
+                    <td>
+                        <button>xóa</button>
+                        <button>sửa</button>
+                        <button>thêm</button>
+                    </td>
                 </tr>
             )
         }
@@ -51,25 +55,25 @@ export default function ListData() {
                 </div>
             </div>
             <div className='BodyListData'>
-            <table>
-        <thead>
-            <tr>
-                <th>STT</th>
-                <th>CCCD/CMND</th>
-                <th>Họ tên</th>
-                <th>Ngày sinh</th>
-                <th>Giới tính</th>
-                <th>Địa chỉ</th>
-                <th>Tôn giáo</th>
-                <th>Trình độ văn hóa</th>
-                <th>Nghề nghiệp</th>
-                <td>Tùy chọn</td>
-            </tr>
-        </thead>
-        <tbody>
-            {DisplayData}
-        </tbody>
-    </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>CCCD/CMND</th>
+                            <th>Họ tên</th>
+                            <th>Ngày sinh</th>
+                            <th>Giới tính</th>
+                            <th>Địa chỉ</th>
+                            <th>Tôn giáo</th>
+                            <th>Trình độ văn hóa</th>
+                            <th>Nghề nghiệp</th>
+                            <td>Tùy chọn</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {DisplayData}
+                    </tbody>
+                </table>
             </div>
         </div>
     )

@@ -8,9 +8,9 @@ export default function Help() {
                 <h1>Hướng dẫn</h1>
             </div>
             <div className='sear'>
-                <input type="text" value ="Tìm kiếm..."/>
-                <button>
-                    <i class="fas fa-search"></i>
+                <input type="text" placeholder="Tìm kiếm..."/>
+                <button id='s-but'>
+                    <img src='http://online.gov.vn/Content/EndUser/img/search.png'></img>
                 </button>
             </div>
             <div className='he-qa'>

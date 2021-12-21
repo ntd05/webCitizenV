@@ -1,5 +1,32 @@
-.access{
-    margin-left: 300px;
-    height: 900px;
-    width: 400px;
+.containerAccessMana{
+    width: 1237px;
+}
+
+.HeaderAccessMana {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.HeaderAccessMana input, button {
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #01a690;
+    font-weight: lighter;
+    margin:10px;
+    border-radius: 5px;
+    font-size: 17px;
+
+}
+
+.HeaderAccessMana input {
+    width: 300px;
+    outline: none;
+}
+
+.HeaderAccessMana button {
+    width: 150px;
+    background-color: #01a690;
+    color: white;
+    cursor: pointer;
 }

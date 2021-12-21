@@ -14,13 +14,13 @@ export default function NewEst() {
         <div className='nes'>
             <SideBar/>
             <Routes>
-                <Route path='/Home/AccessManagement' element={<AccessMana/>}/>
-                <Route path='/Home/Analysis' element={<Analysis/>}/>
-                <Route path='/Home/AreaManagement' element={<AreaMana/>}/>
-                <Route path='/Home/InputData' element={<InputData/>}/>
-                <Route path='/Home/ListData' element={<ListData/>}/>
-                <Route path='/Home/LookUp' element={<LookUp/>}/>
-                <Route path='/Home/News' element={<News/>}/>
+                <Route path='AccessManagement' element={<AccessMana/>}/>
+                <Route path='Analysis' element={<Analysis/>}/>
+                <Route path='AreaManagement' element={<AreaMana/>}/>
+                <Route path='InputData' element={<InputData/>}/>
+                <Route path='ListData' element={<ListData/>}/>
+                <Route path='LookUp' element={<LookUp/>}/>
+                <Route path='News' element={<News/>}/>
             </Routes>
                 
         </div>

@@ -1,8 +1,6 @@
 .containerInData{
     background-color: rgb(218, 247, 236);
-    width: 1237px;
-    height: 555px;
-    margin-left: 17.5%;
+    width: 100%;
 }
 
 .MainInData {
@@ -17,8 +15,9 @@
 }
 
 .HeaderInData {
-    height: 50px;
+    height: 45px;
     display: flex;
+
 }
 
 .containerInData p {

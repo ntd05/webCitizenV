@@ -11,16 +11,19 @@ import NewEst from "./Page/newest/NewEst"
 import LookUp from "./Content/LookUp/LookUp";
 import Home from "./Page/Home/Home"
 import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
+import Menu from "./topBar/Menu";
 
 
 function App() {
   return (
     <div className="App">
         <TopBar/>
+        <Menu/>
         <Routes>
-          <Route exact path='/*' element={<Home/>}/>
+          <Route exact path='/Home/*' element={<Home/>}/>
+          <Route exact path='/' element={<Home/>}/>
           <Route path='/contact' element={<Contact/>}/>
-          <Route path='/*' element={<NewEst/>}/>
+          <Route exact path='/Ne/*' element={<NewEst/>}/>
         </Routes>  
     </div>
   );
