@@ -50,3 +50,14 @@
 a:hover {
     color: crimson;
 }
+@media screen and (max-width: 1200px){
+    .help{
+        font-size: calc(14px + 2 * ((100vw - 768px) / 598));
+        margin: 0;
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+    .he-qa a{
+        font-size: calc(16px + 2 * ((100vw - 768px) / 598));
+    }
+}

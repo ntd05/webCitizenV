@@ -1,7 +1,8 @@
 import React from 'react'
 import Logo from "../image/logo.png"
 import '../topBar/topbar.css'
-import Menu from './Menu'
+import {Link} from 'react-router-dom'
+import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
 
 export default function TopBar() {
     return (
@@ -12,8 +13,7 @@ export default function TopBar() {
                 <p id='desWeb'>HỆ THỐNG ĐIỀU TRA DÂN SỐ</p>
             </div>
             <div className="login">
-                <button id = 'log'>Đăng nhập</button>
-                <button id = 'sign'>Đăng kí</button>
+                <Link to ="/Login"><button id = 'log'>Đăng nhập</button></Link>
             </div>
         </div> 
     )

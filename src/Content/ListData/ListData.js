@@ -1,29 +1,46 @@
 import '../ListData/ListData.css'
 import JsonData from './Data/Data.json'
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 export default function ListData() {
-    const DisplayData = JsonData.map(
-        (info) => {
-            return (
-                <tr>
-                    <td>{info.STT}</td>
-                    <td>{info.CMND}</td>
-                    <td>{info.name}</td>
-                    <td>{info.DofB}</td>
-                    <td>{info.Sex}</td>
-                    <td>{info.Address}</td>
-                    <td>{info.religion}</td>
-                    <td>{info.EduLevel}</td>
-                    <td>{info.Job}</td>
-                    <td>
-                        <button>xóa</button>
-                        <button>sửa</button>
-                        <button>thêm</button>
-                    </td>
-                </tr>
-            )
-        }
-    )
+    const url = 'http://localhost:3001/users/all'
+    const [data, setData] = useState(null)
+    const getData = () =>
+        fetch(url)
+            .then((res) => res.json())
+
+    useEffect(() => {
+        getData().then((data) => setData(data))
+    }, [])
+
+    const DisplayData = data?.map((info) => {
+        return (
+            <tr>
+                <td>{info._id}</td>
+                <td>{info.CMND}</td>
+                <td>{info.name}</td>
+                <td>{info.DofB}</td>
+                <td>{info.Sex}</td>
+                <td>{info.Address}</td>
+                <td>{info.religion}</td>
+                <td>{info.EduLevel}</td>
+                <td>{info.Job}</td>
+                <td className="selectDB">
+                    <button>xóa</button>
+                    <button>sửa</button>
+                    <button>thêm</button>
+                </td>
+            </tr>
+        )
+    })
+
+
+    const DataOfCity = ['Thành phố', 'Hà Nội', 'TP Hồ Chí Minh', 'Hải Phòng', 'Đà Nẵng', 'Hà Giang', 'Cao Bằng', 'Lai Châu', 'Lào Cai', 'Tuyên Quang', 'Lạng Sơn', 'Bắc Kạn', 'Thái Nguyên', 'Yên Bái'];
+    const DataOfHuyen = ['Quận/Huyện/Thị xã', "Bình Chánh", "Bình Tân", "Bình Thạnh", "Cầu Giấy", "Chương Mỹ", "Đan Phượng", "Đông Anh", "Long Biên", "Hoàng Sa", "Liên Chiểu", "Ngũ Hành Sơn", "Sơn Trà", "Tân Uyên", "Thủ Dầu Một", "Định Quán"];
+    const DataOfXa = ['Xã/Phường/Thị trấn', "An Phú Tây", "Bình Chánh", "Bình Hưng", "Bình Lợi", "Đa Phước", "Hưng Long", "Lê Minh Xuân", "Phạm Văn Hai", "Phong Phú", "Quy Đức", "Tân Kiên", "Tân Nhựt", "Tân Quý Tây", "Tân Túc", "Vĩnh Lộc A", "Vĩnh Lộc B", "An Lạc"];
+
+
     return (
         <div className="containerListData">
             <div className="HeaderListData">
@@ -32,22 +49,19 @@ export default function ListData() {
                 </div>
                 <div>
                     <select className="form-select" aria-label="Default select example">
-                        <option selected>Tỉnh/Thành phố</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                    {DataOfCity.map((option) => (
+                            <option>{option}</option>
+                        ))}
                     </select>
                     <select class="form-select" aria-label="Default select example">
-                        <option selected>Quận/Huyện/Thị Xã</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                    {DataOfHuyen.map((option) => (
+                            <option>{option}</option>
+                        ))}
                     </select>
                     <select class="form-select" aria-label="Default select example">
-                        <option selected>Phường/Xã/Thị Trấn</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                    {DataOfXa.map((option) => (
+                            <option>{option}</option>
+                        ))}
                     </select>
                 </div>
                 <div>
@@ -58,7 +72,7 @@ export default function ListData() {
                 <table>
                     <thead>
                         <tr>
-                            <th>STT</th>
+                            <th>ID</th>
                             <th>CCCD/CMND</th>
                             <th>Họ tên</th>
                             <th>Ngày sinh</th>
@@ -73,6 +87,7 @@ export default function ListData() {
                     <tbody>
                         {DisplayData}
                     </tbody>
+
                 </table>
             </div>
         </div>

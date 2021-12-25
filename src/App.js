@@ -12,6 +12,8 @@ import LookUp from "./Content/LookUp/LookUp";
 import Home from "./Page/Home/Home"
 import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
 import Menu from "./topBar/Menu";
+import Login from "./Login/Login";
+
 
 
 function App() {
@@ -21,7 +23,8 @@ function App() {
         <Menu/>
         <Routes>
           <Route exact path='/Home/*' element={<Home/>}/>
-          <Route exact path='/' element={<Home/>}/>
+          <Route exact path='/Login' element={<Login/>}/>
+          <Route exact path='/' element={<SideBar/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route exact path='/Ne/*' element={<NewEst/>}/>
         </Routes>  

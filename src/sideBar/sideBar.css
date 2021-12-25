@@ -6,12 +6,14 @@
     padding-bottom: 20px;
     padding-top: 5px;
     margin-right: 20px;
-    width: 250px;
+    width: 257px;
     height: 85vh;
     font-size: 18px;
     position: sticky;
     top: 60px;
     flex: 1;
+    z-index: 100;
+    display: inline-box;
 }
 
 .BodyMenu > div {
@@ -28,4 +30,24 @@
 }
 .sb{
     display: flex;
+}
+.sb button {
+    display: none;
+    background-color: aquamarine;
+    position: sticky;
+    top: 60px;
+}
+@media screen and (max-width: 1200px){
+    .BodyMenu {
+        font-size: calc(16px + 2 * ((100vw - 768px) / 598));
+        width: 200px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .BodyMenu{
+        display: none;
+    }
+    .sb button {
+        display: inline-block;
+    }
 }

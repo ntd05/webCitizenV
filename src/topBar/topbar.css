@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+.login{
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
 .top > div {
     margin-left: 15px;
 }
@@ -15,10 +21,6 @@
     border-radius: 20px;
     font-size: 1em;
     margin: 5px;
-}
-
-.top > .login {
-    margin-left: 700px;
 }
 
 #log {
@@ -77,6 +79,9 @@
     margin-left: 570px;
     border-bottom: 1px solid white;
     padding: 5px 0px;
+    display: flex;
+    position: absolute;
+    right: 0;
 }
 
 .menu input {
@@ -92,4 +97,31 @@
 
 .menu i {
     padding-right: 15px;
+}
+
+@media screen and (max-width: 1200px){
+    #desWeb {
+        font-size: calc(0.6em + 2 * ((100vw - 768px) / 598));
+    }
+    #nameWeb {
+        font-size: calc(3em + 2 * ((100vw - 768px) / 598));
+    }
+    .search {
+        display: none;
+    }
+    .menuList {
+        font-size: calc(1em + 2 * ((100vw - 768px) / 598));
+    }
+}
+@media screen and (max-width: 800px) {
+    .menuList {
+        font-size: calc(0.9em + 2 * ((100vw - 768px) / 598));
+    }
+    .login {
+    display: none;
+    }
+    ul.menuList{
+        padding: 0;
+        margin: 0;
+    }
 }

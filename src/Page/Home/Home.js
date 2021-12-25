@@ -8,6 +8,7 @@ import  InputData from '../../Content/InputData/InputData';
 import  ListData from '../../Content/ListData/ListData';
 import  LookUp from '../../Content/LookUp/LookUp';
 import  News from '../../Content/News/News';
+import Tintuc from '../../Content/Tintuc/Tintuc';
 
 export default function NewEst() {
     return (
@@ -20,7 +21,8 @@ export default function NewEst() {
                 <Route path='InputData' element={<InputData/>}/>
                 <Route path='ListData' element={<ListData/>}/>
                 <Route path='LookUp' element={<LookUp/>}/>
-                <Route path='News' element={<News/>}/>
+                <Route exact path='News' element={<News/>}/>
+                <Route path='News/*' element={<Tintuc/>}/>
             </Routes>
                 
         </div>

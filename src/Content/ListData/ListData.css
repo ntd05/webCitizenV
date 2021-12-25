@@ -46,3 +46,16 @@ table {
 td {
     font-weight: lighter;
 }
+
+.selectDB > button {
+    height: 20px;
+    font-size: 13px;
+    display: block;
+    width:30px;
+    margin: 0px;
+    margin-left: 15px;
+}
+
+.selectDB {
+    width: 70px;
+}

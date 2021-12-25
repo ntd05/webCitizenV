@@ -1,44 +1,52 @@
+import A1 from '../News/hinhanh/a1.jpg'
+import A2 from '../News/hinhanh/a2.jpg'
+import A3 from '../News/hinhanh/a3.jpg'
+import A4 from '../News/hinhanh/a4.jpg'
+import A5 from '../News/hinhanh/a5.jpg'
 import '../News/News.css'
+import React from 'react'
+
 export default function News() {
     return (
-    <div className='a'>
-        <h2>VAI TRÒ CỦA TỔNG ĐIỀU TRA DÂN SỐ VÀ NHÀ Ở ĐỐI VỚI SỰ PHÁT TRIỂN CỦA MỖI QUỐC GIA</h2>
-        <p>
-            UNFPA là cơ quan hàng đầu của Liên Hợp Quốc cung cấp hỗ trợ cho các cuộc Tổng điều tra dân số và nhà ở trên toàn cầu. Trong Tổng điều tra Dân số chu kỳ 2010, UNFPA đã hỗ trợ 135 quốc gia, thông qua hỗ trợ kỹ thuật, tăng cường năng lực, cung cấp trang thiết bị hoặc dịch vụ, hỗ trợ tài chính và hoạt động, điều phối, quản lý nguồn lực tài chính cho Tổng điều tra dân số cho đối tác chính phủ và thúc đẩy hợp tác Nam-Nam.
-        </p>
-        <br></br>
-        <p>
-            Bà Naomi Kitahara, Trưởng Đại diện của UNFPA tại Việt Nam trả lời các câu hỏi của Tổng Cục Thống kê cung cấp thông tin chi tiết về vai trò của Tổng điều tra Dân số và Nhà ở.
-        </p>
-        <img src='http://tongdieutradanso.vn/uploads/data/6/files/files/1_-Naomi-profile-228x300.jpg'></img>
-        <p>
-        Bà Naomi Kitahara: Tổng điều tra dân số và nhà ở (viết gọn là Tổng điều tra) được tiến hành để thống kê toàn bộ dân số của một quốc gia vào ngày thực hiện Tổng Điều tra, đây là nguồn thông tin hợp lý, độc lập, chính xác và rất cần thiết cho công tác chỉ đạo, hoạch định chính sách, lập kế hoạch, quản lý rủi ro, xây dựng các chương trình phúc lợi xã hội và phân tích thị trường kinh doanh của đất nước. Theo định nghĩa, Tổng điều tra Dân số và Nhà ở là điều tra toàn bộ dân số của một quốc gia vào một ngày nhất định và cung cấp dữ liệu về đặc điểm chính của dân số, chẳng hạn như số lượng, phân bố dân cư theo vùng địa lý, hoạt động kinh tế, tuổi, giới tính, dân tộc, thành phần hộ gia đình và điều kiện sống, trình độ văn hóa, di cư trong nước, quốc tế cùng các đặc điểm kinh tế xã hội khác. Đối tượng điều tra dân số là tất cả người dân tại thời điểm thực hiện Tổng điều tra, thường bao gồm cả người nước ngoài cư trú trên lãnh thổ đất nước đó bất kể tình trạng nhập cư của họ, nhưng không nhất thiết phải bao gồm công dân của quốc gia đó hiện đang cư trú ở nước ngoài tại thời điểm thực hiện Tổng điều tra.
-        </p>
-        <p>Các nguyên tắc cơ bản của Tổng điều tra Dân số và nhà ở là tính phổ quát, tính độc lập, công bằng, tính đồng thời và tiến hành theo chu kỳ xác định. Cần lưu ý là chỉ duy nhất trong Tổng điều tra Dân số và nhà ở cả quy trình và kết quả thống kê được thể hiện, đồng thời cho phép so sánh số liệu của các quốc gia khác nhau theo chuẩn quốc tế, làm căn cứ báo cáo việc các quốc gia thực hiện các cam kết quốc tế. Có tới 107/232 chỉ tiêu trong Mục tiêu Phát triển Bền vững cần dữ liệu dân số để tính toán, với nhiều chỉ tiêu có mẫu số là dân số, được cung cấp từ Tổng điều tra Dân số và nhà ở. Ít nhất 19 chỉ tiêu trong Mục tiêu Phát triển Bền vững được tính từ số liệu của Tổng điều tra Dân số và Nhà ở. Do Tổng điều tra Dân số và Nhà ở tiến hành điều tra đối với tất cả cá nhân của quốc gia, dữ liệu của Tổng điều tra Dân số và Nhà ở cho phép phân tổ sâu hơn, để có thể phân tích toàn diện hơn các vấn đề bất bình đẳng nhằm xác định những đối tượng bị bỏ lại phía sau. </p>
-        <p>
-        Bà Naomi Kitahara: Tổng điều tra dân số và nhà ở (viết gọn là Tổng điều tra) được tiến hành để thống kê toàn bộ dân số của một quốc gia vào ngày thực hiện Tổng Điều tra, đây là nguồn thông tin hợp lý, độc lập, chính xác và rất cần thiết cho công tác chỉ đạo, hoạch định chính sách, lập kế hoạch, quản lý rủi ro, xây dựng các chương trình phúc lợi xã hội và phân tích thị trường kinh doanh của đất nước. Theo định nghĩa, Tổng điều tra Dân số và Nhà ở là điều tra toàn bộ dân số của một quốc gia vào một ngày nhất định và cung cấp dữ liệu về đặc điểm chính của dân số, chẳng hạn như số lượng, phân bố dân cư theo vùng địa lý, hoạt động kinh tế, tuổi, giới tính, dân tộc, thành phần hộ gia đình và điều kiện sống, trình độ văn hóa, di cư trong nước, quốc tế cùng các đặc điểm kinh tế xã hội khác. Đối tượng điều tra dân số là tất cả người dân tại thời điểm thực hiện Tổng điều tra, thường bao gồm cả người nước ngoài cư trú trên lãnh thổ đất nước đó bất kể tình trạng nhập cư của họ, nhưng không nhất thiết phải bao gồm công dân của quốc gia đó hiện đang cư trú ở nước ngoài tại thời điểm thực hiện Tổng điều tra.
-        </p>
-        <p>
-        Bà Naomi Kitahara: Tổng điều tra dân số và nhà ở (viết gọn là Tổng điều tra) được tiến hành để thống kê toàn bộ dân số của một quốc gia vào ngày thực hiện Tổng Điều tra, đây là nguồn thông tin hợp lý, độc lập, chính xác và rất cần thiết cho công tác chỉ đạo, hoạch định chính sách, lập kế hoạch, quản lý rủi ro, xây dựng các chương trình phúc lợi xã hội và phân tích thị trường kinh doanh của đất nước. Theo định nghĩa, Tổng điều tra Dân số và Nhà ở là điều tra toàn bộ dân số của một quốc gia vào một ngày nhất định và cung cấp dữ liệu về đặc điểm chính của dân số, chẳng hạn như số lượng, phân bố dân cư theo vùng địa lý, hoạt động kinh tế, tuổi, giới tính, dân tộc, thành phần hộ gia đình và điều kiện sống, trình độ văn hóa, di cư trong nước, quốc tế cùng các đặc điểm kinh tế xã hội khác. Đối tượng điều tra dân số là tất cả người dân tại thời điểm thực hiện Tổng điều tra, thường bao gồm cả người nước ngoài cư trú trên lãnh thổ đất nước đó bất kể tình trạng nhập cư của họ, nhưng không nhất thiết phải bao gồm công dân của quốc gia đó hiện đang cư trú ở nước ngoài tại thời điểm thực hiện Tổng điều tra.
-        </p>
-        <p>
-        Bà Naomi Kitahara: Tổng điều tra dân số và nhà ở (viết gọn là Tổng điều tra) được tiến hành để thống kê toàn bộ dân số của một quốc gia vào ngày thực hiện Tổng Điều tra, đây là nguồn thông tin hợp lý, độc lập, chính xác và rất cần thiết cho công tác chỉ đạo, hoạch định chính sách, lập kế hoạch, quản lý rủi ro, xây dựng các chương trình phúc lợi xã hội và phân tích thị trường kinh doanh của đất nước. Theo định nghĩa, Tổng điều tra Dân số và Nhà ở là điều tra toàn bộ dân số của một quốc gia vào một ngày nhất định và cung cấp dữ liệu về đặc điểm chính của dân số, chẳng hạn như số lượng, phân bố dân cư theo vùng địa lý, hoạt động kinh tế, tuổi, giới tính, dân tộc, thành phần hộ gia đình và điều kiện sống, trình độ văn hóa, di cư trong nước, quốc tế cùng các đặc điểm kinh tế xã hội khác. Đối tượng điều tra dân số là tất cả người dân tại thời điểm thực hiện Tổng điều tra, thường bao gồm cả người nước ngoài cư trú trên lãnh thổ đất nước đó bất kể tình trạng nhập cư của họ, nhưng không nhất thiết phải bao gồm công dân của quốc gia đó hiện đang cư trú ở nước ngoài tại thời điểm thực hiện Tổng điều tra.
-        </p>
-        <p>
-        Bà Naomi Kitahara: Tổng điều tra dân số và nhà ở (viết gọn là Tổng điều tra) được tiến hành để thống kê toàn bộ dân số của một quốc gia vào ngày thực hiện Tổng Điều tra, đây là nguồn thông tin hợp lý, độc lập, chính xác và rất cần thiết cho công tác chỉ đạo, hoạch định chính sách, lập kế hoạch, quản lý rủi ro, xây dựng các chương trình phúc lợi xã hội và phân tích thị trường kinh doanh của đất nước. Theo định nghĩa, Tổng điều tra Dân số và Nhà ở là điều tra toàn bộ dân số của một quốc gia vào một ngày nhất định và cung cấp dữ liệu về đặc điểm chính của dân số, chẳng hạn như số lượng, phân bố dân cư theo vùng địa lý, hoạt động kinh tế, tuổi, giới tính, dân tộc, thành phần hộ gia đình và điều kiện sống, trình độ văn hóa, di cư trong nước, quốc tế cùng các đặc điểm kinh tế xã hội khác. Đối tượng điều tra dân số là tất cả người dân tại thời điểm thực hiện Tổng điều tra, thường bao gồm cả người nước ngoài cư trú trên lãnh thổ đất nước đó bất kể tình trạng nhập cư của họ, nhưng không nhất thiết phải bao gồm công dân của quốc gia đó hiện đang cư trú ở nước ngoài tại thời điểm thực hiện Tổng điều tra.
-        </p>
-        <p>
-        Bà Naomi Kitahara: Tổng điều tra dân số và nhà ở (viết gọn là Tổng điều tra) được tiến hành để thống kê toàn bộ dân số của một quốc gia vào ngày thực hiện Tổng Điều tra, đây là nguồn thông tin hợp lý, độc lập, chính xác và rất cần thiết cho công tác chỉ đạo, hoạch định chính sách, lập kế hoạch, quản lý rủi ro, xây dựng các chương trình phúc lợi xã hội và phân tích thị trường kinh doanh của đất nước. Theo định nghĩa, Tổng điều tra Dân số và Nhà ở là điều tra toàn bộ dân số của một quốc gia vào một ngày nhất định và cung cấp dữ liệu về đặc điểm chính của dân số, chẳng hạn như số lượng, phân bố dân cư theo vùng địa lý, hoạt động kinh tế, tuổi, giới tính, dân tộc, thành phần hộ gia đình và điều kiện sống, trình độ văn hóa, di cư trong nước, quốc tế cùng các đặc điểm kinh tế xã hội khác. Đối tượng điều tra dân số là tất cả người dân tại thời điểm thực hiện Tổng điều tra, thường bao gồm cả người nước ngoài cư trú trên lãnh thổ đất nước đó bất kể tình trạng nhập cư của họ, nhưng không nhất thiết phải bao gồm công dân của quốc gia đó hiện đang cư trú ở nước ngoài tại thời điểm thực hiện Tổng điều tra.
-        </p>
-        <p>
-        Bà Naomi Kitahara: Tổng điều tra dân số và nhà ở (viết gọn là Tổng điều tra) được tiến hành để thống kê toàn bộ dân số của một quốc gia vào ngày thực hiện Tổng Điều tra, đây là nguồn thông tin hợp lý, độc lập, chính xác và rất cần thiết cho công tác chỉ đạo, hoạch định chính sách, lập kế hoạch, quản lý rủi ro, xây dựng các chương trình phúc lợi xã hội và phân tích thị trường kinh doanh của đất nước. Theo định nghĩa, Tổng điều tra Dân số và Nhà ở là điều tra toàn bộ dân số của một quốc gia vào một ngày nhất định và cung cấp dữ liệu về đặc điểm chính của dân số, chẳng hạn như số lượng, phân bố dân cư theo vùng địa lý, hoạt động kinh tế, tuổi, giới tính, dân tộc, thành phần hộ gia đình và điều kiện sống, trình độ văn hóa, di cư trong nước, quốc tế cùng các đặc điểm kinh tế xã hội khác. Đối tượng điều tra dân số là tất cả người dân tại thời điểm thực hiện Tổng điều tra, thường bao gồm cả người nước ngoài cư trú trên lãnh thổ đất nước đó bất kể tình trạng nhập cư của họ, nhưng không nhất thiết phải bao gồm công dân của quốc gia đó hiện đang cư trú ở nước ngoài tại thời điểm thực hiện Tổng điều tra.
-        </p>
-        <p>
-        Bà Naomi Kitahara: Tổng điều tra dân số và nhà ở (viết gọn là Tổng điều tra) được tiến hành để thống kê toàn bộ dân số của một quốc gia vào ngày thực hiện Tổng Điều tra, đây là nguồn thông tin hợp lý, độc lập, chính xác và rất cần thiết cho công tác chỉ đạo, hoạch định chính sách, lập kế hoạch, quản lý rủi ro, xây dựng các chương trình phúc lợi xã hội và phân tích thị trường kinh doanh của đất nước. Theo định nghĩa, Tổng điều tra Dân số và Nhà ở là điều tra toàn bộ dân số của một quốc gia vào một ngày nhất định và cung cấp dữ liệu về đặc điểm chính của dân số, chẳng hạn như số lượng, phân bố dân cư theo vùng địa lý, hoạt động kinh tế, tuổi, giới tính, dân tộc, thành phần hộ gia đình và điều kiện sống, trình độ văn hóa, di cư trong nước, quốc tế cùng các đặc điểm kinh tế xã hội khác. Đối tượng điều tra dân số là tất cả người dân tại thời điểm thực hiện Tổng điều tra, thường bao gồm cả người nước ngoài cư trú trên lãnh thổ đất nước đó bất kể tình trạng nhập cư của họ, nhưng không nhất thiết phải bao gồm công dân của quốc gia đó hiện đang cư trú ở nước ngoài tại thời điểm thực hiện Tổng điều tra.
-        </p>
-        <p>
-        Bà Naomi Kitahara: Tổng điều tra dân số và nhà ở (viết gọn là Tổng điều tra) được tiến hành để thống kê toàn bộ dân số của một quốc gia vào ngày thực hiện Tổng Điều tra, đây là nguồn thông tin hợp lý, độc lập, chính xác và rất cần thiết cho công tác chỉ đạo, hoạch định chính sách, lập kế hoạch, quản lý rủi ro, xây dựng các chương trình phúc lợi xã hội và phân tích thị trường kinh doanh của đất nước. Theo định nghĩa, Tổng điều tra Dân số và Nhà ở là điều tra toàn bộ dân số của một quốc gia vào một ngày nhất định và cung cấp dữ liệu về đặc điểm chính của dân số, chẳng hạn như số lượng, phân bố dân cư theo vùng địa lý, hoạt động kinh tế, tuổi, giới tính, dân tộc, thành phần hộ gia đình và điều kiện sống, trình độ văn hóa, di cư trong nước, quốc tế cùng các đặc điểm kinh tế xã hội khác. Đối tượng điều tra dân số là tất cả người dân tại thời điểm thực hiện Tổng điều tra, thường bao gồm cả người nước ngoài cư trú trên lãnh thổ đất nước đó bất kể tình trạng nhập cư của họ, nhưng không nhất thiết phải bao gồm công dân của quốc gia đó hiện đang cư trú ở nước ngoài tại thời điểm thực hiện Tổng điều tra.
-        </p>
-    </div>
+        <div  className='a'>
+            <h1>Tin tức</h1>
+            <div>
+            <img src={A1}></img>
+            <div>
+                <a href="News/vai-tro-cua-tong-dieu-tra-dan-so-va-nha-o-doi-voi-su-phat-trien-cua-moi-quoc-gia">Vai trò của tổng điều tra dân số và nhà ở đối với sự phát triển của mỗi quốc gia</a>
+                <br></br>
+                <br></br>
+                <p>UNFPA là cơ quan hàng đầu của Liên Hợp Quốc cung cấp hỗ trợ cho các cuộc Tổng điều tra dân số và nhà ở trên toàn cầu. Trong Tổng điều tra Dân số chu kỳ 2010, UNFPA đã hỗ trợ 135 quốc gia, thông qua hỗ trợ kỹ thuật, tăng cường năng lực,...</p>
+            </div>
+            </div>
+            <div>
+                <img src={A2}></img>
+                <div>
+                    <a href='News/thanh-pho-ha-noi-tong-ket-cong-tac-tong-dieu-tra-dan-so-va-nha-o-nam-2019'>Thành phố Hà Nội Tổng kết công tác Tổng điều tra dân số và nhà ở năm 2019</a>
+                    <p>Chiều ngày 11/10/2019 tại trụ sở UBND Thành phố, Ban chỉ đạo (BCĐ) Tổng điều tra dân số và nhà ở năm 2019 (TĐT) thành phố Hà Nội tổ chức Hội nghị Tổng kết Tổng điều tra dân số và nhà ở năm 2019 trên địa bàn Thành phố</p>
+                </div>
+            </div>
+            <div>
+                <img src={A3}></img>
+                <div>
+                    <a href='News/tphcm-cong-bo-ket-qua-so-bo-tong-dieu-tra-dan-so-va-nha-o-nam-2019'>TPHCM công bố kết quả sơ bộ “Tổng điều tra dân số và nhà ở năm 2019”</a>
+                    <p> Sáng 11/10, tại UBND TPHCM, Ban chỉ đạo Tổng điều tra dân số và nhà ở năm 2019 TPHCM đã tổ chức Hội nghị Tổng kết và công bố kết quả sơ bộ “Tổng điều tra dân số và nhà ở năm 2019”</p>
+                </div>
+            </div>
+            <div>
+                <img src={A4}></img>
+                <div>
+                    <a href='News/cong-bo-ket-qua-tong-dieu-tra-dan-so-2019'>Công bố kết quả Tổng điều tra dân số 2019</a>
+                    <p>Tổng số dân của Việt Nam vào thời điểm 0h ngày 01/4/2019 là 96.208.984 người, trong đó dân số nam là 47.881.061 người (chiếm 49,8%) và dân số nữ là 48.327.923 người (chiếm 50,2%).</p>
+                </div>
+            </div>
+            <div>
+                <img src={A5}></img>
+                <div>
+                    <a href='News/tong-cuc-thong-ke-nhan-giai-thuong-co-quan-nha-nuoc-chuyen-doi-so-xuat-sac'>Tổng cục Thống kê nhận giải thưởng "Cơ quan nhà nước chuyển đổi số xuất sắc"</a>
+                    <p>Chiều ngày 06/9/2019, tại Hà Nội, Hội Truyền thông số Việt Nam tổ chức Lễ trao giải thưởng Chuyển đổi số Việt Nam – Vietnam Digital Awards (VDA) 2019.</p>
+                </div>
+            </div>
+        </div>
     )
 }

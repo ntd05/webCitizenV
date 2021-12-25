@@ -30,3 +30,14 @@
     color: white;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1200px){
+    .HeaderLookUp input{
+        width: calc(250px + 2 * ((100vw - 768px) / 598));
+        font-size: calc(15px + 2 * ((100vw - 768px) / 598));
+    }
+    .HeaderLookUp button{
+        width: calc(125px + 2 * ((100vw - 768px) / 598));
+        font-size: calc(15px + 2 * ((100vw - 768px) / 598));
+    }
+}

@@ -1,12 +1,12 @@
 .containerInData{
     background-color: rgb(218, 247, 236);
-    width: 100%;
+    width: 80%;
 }
 
 .MainInData {
     background-color: white;
-    height: 555px;
-    margin:0px 150px;
+    height: 950px;
+    margin:0px 15%;
     text-align: center;
 }
 
@@ -37,4 +37,16 @@
     font-weight: lighter;
     color: black;
     margin:0px;
+}
+
+@media screen and (max-width: 800px) {
+    .containerInData{
+        width: 90%;
+    }
+    .containerInData p {
+        font-size: calc(35px + 2 * ((100vw - 768px) / 598));
+    }
+    .HeaderInData > button {
+        font-size: calc(16px + 2 * ((100vw - 768px) / 598));
+    }
 }

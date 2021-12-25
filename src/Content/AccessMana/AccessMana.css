@@ -1,5 +1,5 @@
 .containerAccessMana{
-    width: 1237px;
+    width: 100%;
 }
 
 .HeaderAccessMana {
@@ -29,4 +29,14 @@
     background-color: #01a690;
     color: white;
     cursor: pointer;
+}
+@media screen and (max-width: 1200px){
+    .HeaderAccessMana input{
+        width: calc(250px + 2 * ((100vw - 768px) / 598));
+        font-size: calc(15px + 2 * ((100vw - 768px) / 598));
+    }
+    .HeaderAccessMana button{
+        width: calc(125px + 2 * ((100vw - 768px) / 598));
+        font-size: calc(15px + 2 * ((100vw - 768px) / 598));
+    }
 }

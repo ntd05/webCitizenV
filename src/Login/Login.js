@@ -3,12 +3,12 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import Logo from "../image/logo.png"
 import { ModalDialog } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from 'react';
 
-function Login(props) {
+export default function Login(props) {
+    const [state,setState] = useState(false);
     const validationSchema = Yup.object().shape({
-        Email: Yup.string().required('Vui lòng điền email!').matches().email('Email không hợp lệ!'),
+        Email: Yup.string().required('Vui lòng điền id!').matches(),
         Password: Yup.string().required('Vui lòng điền mật khẩu!').matches(/^.*(?=.{8,})((?=.*[!@#$%^&*()\-_=+{};:,<.>]){1})(?=.*\d)((?=.*[a-z]){1})((?=.*[A-Z]){1}).*$/,
             "Password must contain at least 8 characters, one uppercase, one number and one special case character"
         )
@@ -23,9 +23,9 @@ function Login(props) {
         validationSchema,
     });
     return (
-        <div>
+        <div className="aaaa">
             <ModalDialog>
-                    <form className='formLogin' onSubmit={formik.handleSubmit}>
+            <form className='formLogin' onSubmit={formik.handleSubmit}>
                         <div>
                             <img src={Logo} />
                         </div>
@@ -69,11 +69,11 @@ function Login(props) {
                             <br />
                             <a href=''>Quên mật khẩu</a>
                         </div>
-                    </form>                
+                    </form>     
             </ModalDialog>
+                      
             </div>
 
     );
 }
 
-export default Login;

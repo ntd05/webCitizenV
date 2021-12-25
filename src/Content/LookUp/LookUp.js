@@ -1,45 +1,44 @@
 import '../LookUp/LookUp.css'
 import JsonData from '../ListData/Data/Data.json'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function LookUp() {
 
     const [state, setState] = useState("");
-    const [isOpen, setOpen] = useState(false);
+    const [valueSearch, setValueSearch] = useState("");
+    const url = 'http://localhost:3001/users/all'
+    const [data, setData] = useState(null)
+    const getData = () =>
+        fetch(url)
+            .then((res) => res.json())
 
-    const DisplayData = JsonData.map(
-        (info) => {
-            return (
-                <tr>
-                    <td>{info.STT}</td>
-                    <td>{info.CMND}</td>
-                    <td>{info.name}</td>
-                    <td>{info.DofB}</td>
-                    <td>{info.Sex}</td>
-                    <td>{info.Address}</td>
-                    <td>{info.religion}</td>
-                    <td>{info.EduLevel}</td>
-                    <td>{info.Job}</td>
-                </tr>
-            )
-        }
-    )
+    useEffect(() => {
+        getData().then((data) => setData(data))
+    }, [])
 
+    const handleOnChange = ({ target }) => {
+        setState(target.value);
+    };
+
+    const handleOnClick = () => {
+        setValueSearch(state);
+    };
+    
     return (
         <div className="containerLookUp">
             <div className="HeaderLookUp">
                 <div>
-                    <input type="text" placeholder='Nhập CMND' onChange={e => setState(e.target.value)} />
+                    <input type="text" placeholder='Nhập CMND' onChange={handleOnChange} />
                 </div>
                 <div>
-                    <button onClick={() => setOpen(true)}>Ghi nhận</button>
+                    <button onClick={handleOnClick}>Ghi nhận</button>
                 </div>
             </div>
             <div className='BodyLookUp'>
                 <table>
                     <thead>
                         <tr>
-                            <th>STT</th>
+                            <th>ID</th>
                             <th>CCCD/CMND</th>
                             <th>Họ tên</th>
                             <th>Ngày sinh</th>
@@ -48,32 +47,33 @@ export default function LookUp() {
                             <th>Tôn giáo</th>
                             <th>Trình độ văn hóa</th>
                             <th>Nghề nghiệp</th>
-                            <th>dddd</th>
                         </tr>
                     </thead>
                     <tbody>
-                    {isOpen && (JsonData.filter((val) => {
-                        if (state == "") {
-                            return val
-                        }
-                        else if (val.CMND.includes(state)) {
-                            return val;
-                        }
-                    }).map((val, key) => {
-                        console.log(val.name);
-                        <tr>
-                            <td>{val.STT}</td>
-                            <td>{val.CMND}</td>
-                            <td>{val.name}</td>
-                            <td>{val.DofB}</td>
-                            <td>{val.Sex}</td>
-                            <td>{val.Address}</td>
-                            <td>{val.religion}</td>
-                            <td>{val.EduLevel}</td>
-                            <td>{val.Job}</td>
-                            <td>{val.Select}</td>
-                        </tr>
-                    }))}
+                        {(data?.filter((val) => {
+                            if (valueSearch == "") {
+                                return val
+                            }
+                            else if (val._id.includes(valueSearch)) {
+                                return val;
+                            }
+                        }).map((val, key) => {
+                            console.log(val.name);
+                            return (
+                                <tr>
+                                    <td>{val._id}</td>
+                <td>{val.CMND}</td>
+                <td>{val.name}</td>
+                <td>{val.DofB}</td>
+                <td>{val.Sex}</td>
+                <td>{val.Address}</td>
+                <td>{val.religion}</td>
+                <td>{val.EduLevel}</td>
+                <td>{val.Job}</td>
+                                </tr>
+                            )
+
+                        }))}
                     </tbody>
                 </table>
             </div >
